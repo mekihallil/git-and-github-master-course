@@ -2,4 +2,9 @@ Working on anice feature!
 
 Another awesome  feature.
 second feature
+<<<<<<< Updated upstream
 new add feature
+=======
+
+new ara awesome feature
+>>>>>>> Stashed changes
