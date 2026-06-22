@@ -1,3 +1,7 @@
 Working on anice feature!
+<<<<<<< Updated upstream
+=======
 
 Another awesome feature
+Another awesome feature
+>>>>>>> Stashed changes
