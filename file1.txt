@@ -1,7 +1,6 @@
 Working on anice feature!
 
 Another awesome  feature.
-<<<<<<< Updated upstream
 second feature
 new add feature
 
@@ -14,6 +13,4 @@ Another awesome  feature.
 second feature
 
 testing push 
-=======
 second feature
->>>>>>> Stashed changes
