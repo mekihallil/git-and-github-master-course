@@ -25,3 +25,98 @@ If you are a beginner, this guide is for you too.
 ---
 
 ## Complete Command Reference
+
+
+## 🖥️ 1. Windows Command Line Basics
+
+---
+
+### `cd <folder>`
+**What it does:** Move into a folder.
+**Analogy:** Like double-clicking a folder to open it.
+```cmd
+cd projects
+```
+
+---
+
+### `cd ..`
+**What it does:** Go back one folder level.
+**Analogy:** Like clicking the back button in File Explorer.
+```cmd
+cd ..
+```
+
+---
+
+### `dir`
+**What it does:** List all files and folders in current location.
+**Analogy:** Like looking inside an open folder.
+```cmd
+dir
+```
+
+---
+
+### `cls`
+**What it does:** Clear the terminal screen.
+**When to use:** When the screen gets too cluttered.
+```cmd
+cls
+```
+
+---
+
+### `echo Hello > file.txt`
+**What it does:** Creates a new file and writes "Hello" inside it.
+**Analogy:** Like creating a new text file and typing in it.
+```cmd
+echo Hello > file.txt
+```
+
+---
+
+### `type file.txt`
+**What it does:** Shows the content of a file in the terminal.
+**Analogy:** Like opening a file to read it, without editing.
+```cmd
+type file.txt
+```
+
+---
+
+### `del file.txt`
+**What it does:** Permanently deletes a file.
+**Warning:** There is no undo. The file is gone.
+```cmd
+del file.txt
+```
+
+---
+
+### `rmdir foldername`
+**What it does:** Deletes an empty folder.
+**To delete a folder with files inside:**
+```cmd
+rmdir /s /q foldername
+```
+
+---
+
+### `copy source.txt destination.txt`
+**What it does:** Copies a file to a new location.
+**Analogy:** Like Ctrl+C and Ctrl+V for files.
+```cmd
+copy notes.txt backup_notes.txt
+```
+
+---
+
+### `move file.txt folder\`
+**What it does:** Moves a file into a folder.
+**Analogy:** Like dragging a file into a folder.
+```cmd
+move notes.txt projects\
+```
+
+---
