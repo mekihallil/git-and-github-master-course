@@ -155,3 +155,65 @@ git config --list
 **What it does:** Shows all your current Git settings.
 
 ---
+
+## 📁 3. Repository Commands
+
+> A repository (repo) is a folder Git is tracking.
+> Think of it as a project folder with a memory.
+
+---
+
+### `git init`
+**What it does:** Turns your current folder into a Git repository.
+**When to use:** At the very start of a new project.
+**Analogy:** Like giving your folder a memory to track all changes.
+```bash
+git init
+```
+**Output:**
+
+---
+
+### `git status`
+**What it does:** Shows the current state of your files.
+**Tells you:**
+- Which files are changed
+- Which files are staged
+- Which files are untracked
+```bash
+git status
+```
+**Output:**
+
+---
+
+### `git add <file>`
+**What it does:** Stages a specific file — prepares it for commit.
+**Analogy:** Like putting items in a box before sealing it.
+```bash
+git add index.html
+```
+
+---
+
+### `git add .`
+**What it does:** Stages ALL changed files at once.
+```bash
+git add .
+```
+
+---
+
+### `git log`
+**What it does:** Shows the full history of all commits.
+**Analogy:** Like reading a diary of every change ever made.
+```bash
+git log
+```
+**Cleaner version:**
+```bash
+git log --oneline
+```
+**Output:**
+
+---
