@@ -58,7 +58,7 @@ dir
 
 ---
 
-### `cls`
+### `cls/clear`
 **What it does:** Clear the terminal screen.
 **When to use:** When the screen gets too cluttered.
 ```cmd
@@ -76,7 +76,7 @@ echo Hello > file.txt
 
 ---
 
-### `type file.txt`
+### `type/code file.txt`
 **What it does:** Shows the content of a file in the terminal.
 **Analogy:** Like opening a file to read it, without editing.
 ```cmd
@@ -85,7 +85,7 @@ type file.txt
 
 ---
 
-### `del file.txt`
+### `del/rm file.txt`
 **What it does:** Permanently deletes a file.
 **Warning:** There is no undo. The file is gone.
 ```cmd
