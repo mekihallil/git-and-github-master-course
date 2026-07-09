@@ -120,3 +120,38 @@ move notes.txt projects\
 ```
 
 ---
+
+---
+
+## 🔧 2. Git Configuration
+
+> Tell Git who you are. Git stamps your name and email
+> on every commit you make — like signing your work.
+
+---
+
+### `git config --global user.name "Your Name"`
+**What it does:** Sets your name for all Git commits globally.
+**Why it matters:** Every commit shows who made it.
+```bash
+git config --global user.name "Meki"
+```
+
+---
+
+### `git config --global user.email "your@email.com"`
+**What it does:** Sets your email for all Git commits globally.
+**Why it matters:** GitHub uses this to link commits to your account.
+```bash
+git config --global user.email "Meki@email.com"
+```
+
+---
+
+### Check your configuration
+```bash
+git config --list
+```
+**What it does:** Shows all your current Git settings.
+
+---
