@@ -155,3 +155,45 @@ git config --list
 **What it does:** Shows all your current Git settings.
 
 ---
+
+## 🔀 5. Merging
+
+> Merging combines changes from one branch into another.
+> Analogy: Like copying your edits from the photocopy
+> back into the original document.
+
+---
+
+### `git merge <branch-name>`
+**What it does:** Merges the named branch into your current branch.
+```bash
+git switch main
+git merge feature/login
+```
+
+---
+
+### Fast-Forward Merge
+Happens when main has no new commits since the branch was created.
+Git simply moves the pointer forward — clean and simple.
+
+
+---
+
+### Three-Way Merge
+Happens when both main and the branch have new commits.
+Git creates a new merge commit combining both.
+
+
+---
+
+### Merge Conflict
+Happens when both branches changed the same line.
+Git cannot decide which version to keep — you must fix it manually.
+
+
+**Fix:** Edit the file, remove the markers, then:
+```bash
+git add <file>
+git commit -m "resolve merge conflict"
+```
