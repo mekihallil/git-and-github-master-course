@@ -217,3 +217,61 @@ git log --oneline
 **Output:**
 
 ---
+
+
+## 🌿 4. Branching
+
+> A branch is an independent copy of your project
+> where you can work safely without affecting the main code.
+> Analogy: Like working on a photocopy of a document
+> instead of the original.
+
+---
+
+### `git branch`
+**What it does:** Lists all branches in your repository.
+```bash
+git branch
+```
+**Output:**
+
+
+The `*` shows which branch you are currently on.
+
+---
+
+### `git branch <branch-name>`
+**What it does:** Creates a new branch.
+**When to use:** When starting a new feature or fix.
+```bash
+git branch feature/login
+```
+
+---
+
+### `git switch <branch-name>`
+**What it does:** Switches to an existing branch.
+**Modern command** — use this instead of `git checkout`.
+```bash
+git switch feature/login
+```
+
+---
+
+### `git switch -c <new-branch>`
+**What it does:** Creates a new branch AND switches to it immediately.
+**The `-c` stands for:** create
+```bash
+git switch -c feature/signup
+```
+
+---
+
+### `git checkout <branch-name>` *(old way)*
+**What it does:** Same as `git switch` but older syntax.
+**Still works** but `git switch` is cleaner and recommended.
+```bash
+git checkout feature/login
+```
+
+---
