@@ -156,44 +156,122 @@ git config --list
 
 ---
 
-## 🔀 5. Merging
+## 📁 3. Repository Commands
 
-> Merging combines changes from one branch into another.
-> Analogy: Like copying your edits from the photocopy
-> back into the original document.
+> A repository (repo) is a folder Git is tracking.
+> Think of it as a project folder with a memory.
 
 ---
 
-### `git merge <branch-name>`
-**What it does:** Merges the named branch into your current branch.
+### `git init`
+**What it does:** Turns your current folder into a Git repository.
+**When to use:** At the very start of a new project.
+**Analogy:** Like giving your folder a memory to track all changes.
 ```bash
-git switch main
-git merge feature/login
+git init
+```
+**Output:**
+
+---
+
+### `git status`
+**What it does:** Shows the current state of your files.
+**Tells you:**
+- Which files are changed
+- Which files are staged
+- Which files are untracked
+```bash
+git status
+```
+**Output:**
+
+---
+
+### `git add <file>`
+**What it does:** Stages a specific file — prepares it for commit.
+**Analogy:** Like putting items in a box before sealing it.
+```bash
+git add index.html
 ```
 
 ---
 
-### Fast-Forward Merge
-Happens when main has no new commits since the branch was created.
-Git simply moves the pointer forward — clean and simple.
-
-
----
-
-### Three-Way Merge
-Happens when both main and the branch have new commits.
-Git creates a new merge commit combining both.
-
-
----
-
-### Merge Conflict
-Happens when both branches changed the same line.
-Git cannot decide which version to keep — you must fix it manually.
-
-
-**Fix:** Edit the file, remove the markers, then:
+### `git add .`
+**What it does:** Stages ALL changed files at once.
 ```bash
-git add <file>
-git commit -m "resolve merge conflict"
+git add .
 ```
+
+---
+
+### `git log`
+**What it does:** Shows the full history of all commits.
+**Analogy:** Like reading a diary of every change ever made.
+```bash
+git log
+```
+**Cleaner version:**
+```bash
+git log --oneline
+```
+**Output:**
+
+---
+
+
+## 🌿 4. Branching
+
+> A branch is an independent copy of your project
+> where you can work safely without affecting the main code.
+> Analogy: Like working on a photocopy of a document
+> instead of the original.
+
+---
+
+### `git branch`
+**What it does:** Lists all branches in your repository.
+```bash
+git branch
+```
+**Output:**
+
+
+The `*` shows which branch you are currently on.
+
+---
+
+### `git branch <branch-name>`
+**What it does:** Creates a new branch.
+**When to use:** When starting a new feature or fix.
+```bash
+git branch feature/login
+```
+
+---
+
+### `git switch <branch-name>`
+**What it does:** Switches to an existing branch.
+**Modern command** — use this instead of `git checkout`.
+```bash
+git switch feature/login
+```
+
+---
+
+### `git switch -c <new-branch>`
+**What it does:** Creates a new branch AND switches to it immediately.
+**The `-c` stands for:** create
+```bash
+git switch -c feature/signup
+```
+
+---
+
+### `git checkout <branch-name>` *(old way)*
+**What it does:** Same as `git switch` but older syntax.
+**Still works** but `git switch` is cleaner and recommended.
+```bash
+git checkout feature/login
+```
+
+---
