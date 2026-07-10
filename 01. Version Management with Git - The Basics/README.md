@@ -389,3 +389,55 @@ git checkout index.html
 ```
 
 ---
+
+## 🧹 8. Deleting Untracked Files
+
+> Untracked files are new files Git has never seen before.
+> These commands permanently delete them.
+
+---
+
+### `git clean -dn`
+**What it does:** PREVIEW — shows which files WOULD be deleted.
+**Always run this first** before actually deleting.
+```bash
+git clean -dn
+```
+**Output:**
+
+
+---
+
+### `git clean -df`
+**What it does:** Actually deletes all untracked files and folders.
+**Warning:** Cannot be undone.
+```bash
+git clean -df
+```
+
+---
+
+## 📤 9. Undoing Staged Changes
+
+> You staged a file with `git add` but want to unstage it
+> before committing.
+
+---
+
+### `git restore --staged <file-name>` ✅ Modern
+**What it does:** Removes file from staging area.
+**Your changes are kept** — just unstaged.
+```bash
+git restore --staged index.html
+```
+
+---
+
+### `git reset <file-name>`
+**What it does:** Same as above — unstages the file.
+**Your changes are kept** in the working directory.
+```bash
+git reset index.html
+```
+
+---
