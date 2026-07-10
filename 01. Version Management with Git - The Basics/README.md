@@ -319,3 +319,33 @@ git commit -m "resolve merge conflict"
 ```
 
 ---
+
+## 🔍 6. Tracking Files
+
+> Git puts files into three categories:
+> Tracked, Untracked, and Staged.
+
+---
+
+### `git ls-files`
+**What it does:** Shows all files Git is currently tracking.
+```bash
+git ls-files
+```
+**Output:**
+
+---
+
+### `git rm <file-name>`
+**What it does:** Removes a file from Git tracking AND deletes it.
+**Warning:** This deletes the file from your computer too.
+```bash
+git rm old-file.txt
+```
+
+**To stop tracking without deleting the file:**
+```bash
+git rm --cached old-file.txt
+```
+
+---
