@@ -349,3 +349,43 @@ git rm --cached old-file.txt
 ```
 
 ---
+## ↩️ 7. Undoing Unstaged Changes
+
+> You edited a file but have NOT staged it yet
+> and want to go back to the last saved version.
+
+---
+
+### `git restore <file-name>` ✅ Modern
+**What it does:** Discards all changes in a file since last commit.
+**Warning:** Changes are permanently lost.
+```bash
+git restore index.html
+```
+
+---
+
+### `git restore -p <file-name>`
+**What it does:** Lets you undo specific lines instead of the whole file.
+**The `-p` stands for:** `--patch`
+```bash
+git restore -p index.html
+```
+**Interactive options:**
+| Key | Action |
+|-----|--------|
+| `y` | Undo this chunk |
+| `n` | Keep this chunk |
+| `s` | Split into smaller pieces |
+| `e` | Edit manually which lines to undo |
+| `q` | Quit |
+
+---
+
+### `git checkout <file-name>` *(old way)*
+**What it does:** Same as `git restore` but older syntax.
+```bash
+git checkout index.html
+```
+
+---
