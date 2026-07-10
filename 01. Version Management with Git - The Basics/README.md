@@ -606,3 +606,105 @@ Deleted branch feature/dashboard (was i7j8k9l).
 | Cleaning up many old branches | List with `-d` then force with `-D` |
 
 ---
+## 🔗 13. Saving Detached HEAD Changes
+
+> If you made commits while in Detached HEAD state,
+> those commits are NOT attached to any branch.
+> You must create a new branch from them before switching away
+> or they will be lost forever.
+> Analogy: Like writing notes on a loose piece of paper —
+> you must staple it to a notebook before you lose it.
+
+---
+
+### `git branch <new-branch-name> <commit-id>` ✅
+
+**What it does:** Creates a new branch from a specific commit ID.
+**Why it is used:** Saves commits made in Detached HEAD state.
+**When to use:** Immediately after making commits in Detached HEAD.
+
+```bash
+git branch experiment/old-feature a1b2c3d
+```
+
+**Output:**
+```
+(no output means success)
+```
+
+**Then switch to your new branch:**
+```bash
+git switch experiment/old-feature
+```
+
+**Output:**
+```
+Switched to branch 'experiment/old-feature'
+```
+
+---
+
+### Full Safe Workflow
+
+```bash
+# Step 1 — Enter Detached HEAD
+git switch --detach a1b2c3d
+
+# Output:
+# HEAD is now at a1b2c3d add login page
+
+# Step 2 — Make changes and commit
+git add .
+git commit -m "experiment: test old feature"
+
+# Output:
+# [detached HEAD f1g2h3i] experiment: test old feature
+# 1 file changed, 5 insertions(+)
+
+# Step 3 — Save by creating branch from commit ID
+git branch experiment/old-feature f1g2h3i
+
+# Step 4 — Switch to your new branch
+git switch experiment/old-feature
+
+# Output:
+# Switched to branch 'experiment/old-feature'
+
+# Step 5 — Return to main and merge
+git switch main
+git merge experiment/old-feature
+
+# Output:
+# Updating a1b2c3d..f1g2h3i
+# Fast-forward
+#  index.html | 5 +++++
+#  1 file changed, 5 insertions(+)
+```
+
+---
+
+### ⚠️ What Happens if You Do NOT Save
+
+```bash
+# If you switch away without creating a branch
+git switch main
+
+# Git warns you:
+# Warning: you are leaving 1 commit behind, not connected to any branch.
+# If you want to keep it, create a branch:
+#   git branch <new-branch-name> f1g2h3i
+```
+
+---
+
+### Golden Rules for Detached HEAD
+
+| Situation | What to do |
+|---|---|
+| Just exploring old commits | Safe — no need to save |
+| Made commits in Detached HEAD | Immediately run `git branch <name> <id>` |
+| Switched away without saving | Commits may be lost ❌ |
+| Not sure of the commit ID | Run `git log --oneline` first |
+
+---
+ 
