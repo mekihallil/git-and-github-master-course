@@ -441,3 +441,37 @@ git reset index.html
 ```
 
 ---
+
+## ⏪ 10. Removing Commits (Reset)
+
+> HEAD~1 means "go back 1 commit".
+
+---
+
+### `git reset --soft HEAD~1`
+**What it does:** Removes the last commit.
+**Your changes:** Kept and still staged — ready to re-commit.
+**Analogy:** Unsealing a box but keeping everything inside it.
+```bash
+git reset --soft HEAD~1
+```
+
+---
+
+### `git reset HEAD~1` *(Mixed — default)*
+**What it does:** Removes the last commit.
+**Your changes:** Kept but unstaged — back in working directory.
+**Analogy:** Unsealing the box AND unpacking the items.
+```bash
+git reset HEAD~1
+```
+
+---
+
+### `git reset --hard HEAD~1`
+**What it does:** Removes the last commit.
+**Your changes:** Completely deleted — cannot be recovered.
+**Analogy:** Throwing the sealed box in the trash.
+```bash
+git reset --hard HEAD~1
+```
