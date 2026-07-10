@@ -475,3 +475,134 @@ git reset HEAD~1
 ```bash
 git reset --hard HEAD~1
 ```
+
+## 🔗 11. Detached HEAD
+
+> Detached HEAD means you are looking at an old commit
+> directly — not on any branch.
+> Analogy: Like reading an old page of your diary
+> without being on the current page.
+
+---
+
+### Enter Detached HEAD
+```bash
+git checkout <commit-id>
+# or modern way
+git switch --detach <commit-id>
+```
+
+---
+
+### Full Safe Workflow
+```bash
+# 1. Enter detached HEAD
+git switch --detach a1b2c3d
+
+# 2. Make changes and commit
+git add .
+git commit -m "experiment from old commit"
+
+# 3. Save your work — create a branch
+git switch -c experiment/old-feature
+
+# 4. Return to main
+git switch main
+
+# 5. Merge your new branch
+git merge experiment/old-feature
+```
+
+---
+
+## 🗑️ 12. Deleting Branches
+
+> When a branch is no longer needed — after merging —
+> it is good practice to delete it and keep your repository clean.
+> Analogy: Like throwing away your photocopy after copying
+> the edits back into the original document.
+
+---
+
+### `git branch -d <branch-name>` ✅ Safe Delete
+
+**What it does:** Deletes a branch only if it has been fully merged.
+**Why it is used:** Keeps your repository clean and organised.
+**When to use:** After merging a feature branch into main.
+
+```bash
+git branch -d feature/login
+```
+
+**Output if merged:**
+```
+Deleted branch feature/login (was a1b2c3d).
+```
+
+**Output if NOT merged:**
+```
+error: The branch 'feature/login' is not fully merged.
+If you are sure you want to delete it, run:
+  git branch -D feature/login
+```
+
+---
+
+### `git branch -D <branch-name>` ⚠️ Force Delete
+
+**What it does:** Force deletes a branch even if it has NOT been merged.
+**Why it is used:** When you want to discard a branch completely.
+**When to use:** Only when you are 100% sure you do not need it.
+
+```bash
+git branch -D feature/login
+```
+
+**Output:**
+```
+Deleted branch feature/login (was a1b2c3d).
+```
+
+---
+
+### Deleting Multiple Branches at Once
+
+**What it does:** Deletes several branches in one command.
+**Why it is used:** Saves time when cleaning up many old branches.
+
+```bash
+# Safe delete multiple branches
+git branch -d feature/login feature/signup feature/dashboard
+
+# Force delete multiple branches
+git branch -D feature/login feature/signup feature/dashboard
+```
+
+**Output:**
+```
+Deleted branch feature/login (was a1b2c3d).
+Deleted branch feature/signup (was e4f5g6h).
+Deleted branch feature/dashboard (was i7j8k9l).
+```
+
+---
+
+### Quick Comparison
+
+| Command | Stands for | Deletes if not merged | Safe? |
+|---|---|---|---|
+| `git branch -d` | delete | ❌ Refuses | ✅ Always safe |
+| `git branch -D` | force Delete | ✅ Yes | ⚠️ Dangerous |
+
+---
+
+### Golden Rules
+
+| Situation | Use this |
+|---|---|
+| Branch is fully merged | `git branch -d` |
+| Branch is NOT merged but no longer needed | `git branch -D` |
+| Not sure if branch is merged | Always try `-d` first |
+| Cleaning up many old branches | List with `-d` then force with `-D` |
+
+---
