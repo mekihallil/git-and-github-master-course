@@ -55,3 +55,14 @@ git reflog
 **When to use:** After a feature, fix, or experiment is finished and tested, and it's ready to join the main codebase.
 
 ---
+
+## 🧬 18. Understanding Merge Types
+
+> Git decides HOW to merge automatically, based on your
+> branch history. There are two main types you'll see:
+> **Fast-Forward** and **Recursive (Three-Way)**.
+
+| Merge Type | Happens when | Creates a merge commit? |
+|---|---|---|
+| Fast-Forward | Main has no new commits since branching | ❌ No — just moves the pointer |
+| Recursive (Three-Way) | Both branches have new commits | ✅ Yes — combines both histories |
