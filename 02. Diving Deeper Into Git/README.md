@@ -21,3 +21,23 @@
 git stash
 ```
 **Output:**
+
+
+
+## 🕰️ 16. Bringing Lost Data Back with git reflog
+
+> `git reflog` records every single move your HEAD has made —
+> commits, resets, checkouts, merges — even ones you "lost."
+> Analogy: Like a security camera recording every move you make
+> in your repository, even the mistakes.
+
+---
+
+### `git reflog`
+**What it does:** Shows a log of everywhere your HEAD has pointed to, including deleted commits.
+**Why it is used:** To recover commits that seem lost — for example, after a `git reset --hard`.
+**When to use:** Anytime you think you've lost work and need to find it again.
+```bash
+git reflog
+```
+**Output:**
