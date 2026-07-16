@@ -66,3 +66,21 @@ git reflog
 |---|---|---|
 | Fast-Forward | Main has no new commits since branching | ❌ No — just moves the pointer |
 | Recursive (Three-Way) | Both branches have new commits | ✅ Yes — combines both histories |
+
+
+## ⏩ 19. Applying the Fast-Forward Merge
+
+> Fast-forward merge happens when the branch you're merging
+> IN has all the commits main is missing, and main hasn't moved.
+> Analogy: Like main was "asleep" while your branch worked —
+> Git just moves main's bookmark forward to catch up.
+
+**What it does:** Moves the current branch pointer forward to match the merged branch — no new commit is created.
+**Why it is used:** It keeps history clean and linear when there's no divergence to resolve.
+**When to use:** When `main` hasn't changed since you created your feature branch.
+
+```bash
+git switch main
+git merge feature/login
+```
+**Output:**
