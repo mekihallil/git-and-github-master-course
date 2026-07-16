@@ -84,3 +84,23 @@ git switch main
 git merge feature/login
 ```
 **Output:**
+
+
+## 🔗 20. The Recursive Merge (Non-Fast-Forward)
+
+> Recursive merge happens when BOTH branches have new commits
+> since they diverged. Git combines both histories into
+> a brand-new merge commit.
+> Analogy: Like two people editing the same document
+> separately — Git creates a new page that combines
+> both sets of edits.
+
+**What it does:** Creates a new merge commit that has two parent commits — one from each branch.
+**Why it is used:** To preserve the full history of both branches instead of rewriting it.
+**When to use:** When main has moved forward since you branched off (the normal case in team projects).
+
+```bash
+git switch main
+git merge feature/signup
+```
+**Output:**
