@@ -41,3 +41,17 @@ git stash
 git reflog
 ```
 **Output:**
+
+
+## 🔀 17. Combining Branches — What & Why?
+
+> Combining branches means bringing the work from one branch
+> into another so the code lives together in one place.
+> Analogy: Like combining edits from two people's photocopies
+> back into a single, final document.
+
+**Why it is used:** Multiple people (or you) work on separate branches to avoid breaking the main code. Eventually, that work needs to come together — this is what merging is for.
+
+**When to use:** After a feature, fix, or experiment is finished and tested, and it's ready to join the main codebase.
+
+---
