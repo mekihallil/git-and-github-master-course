@@ -104,3 +104,63 @@ git switch main
 git merge feature/signup
 ```
 **Output:**
+
+## ⚔️ 23. Handling Merge Conflicts
+
+> A merge conflict happens when Git can't automatically decide
+> how to combine changes — usually because two branches changed
+> the SAME line in the SAME file differently.
+> Analogy: Like two people editing the same sentence in a shared
+> document at the same time — someone has to manually decide
+> the final version.
+
+---
+
+### Why Conflicts Happen
+**What it does:** Git pauses the merge/rebase and asks YOU to decide which changes to keep.
+**Why it is used:** Git is protecting your code — it won't guess and risk deleting someone's work.
+**When it happens:** When merging or rebasing branches that changed the same lines.
+
+```bash
+git merge feature/login
+```
+**Output:**
+
+## 🍒 25. Understanding "git cherry-pick"
+
+> Cherry-picking takes ONE specific commit from another branch
+> and applies it to your current branch — without merging
+> everything else.
+> Analogy: Like picking just one ripe cherry off a tree, instead
+> of taking the whole branch.
+
+---
+
+### `git cherry-pick <commit-id>`
+**What it does:** Copies a single commit from another branch onto your current branch as a new commit.
+**Why it is used:** When you need ONE fix or feature from another branch, without pulling in unrelated changes.
+**When to use:** Bug fixes on a hotfix branch that also need to go into main, without merging the entire branch.
+
+```bash
+git switch main
+git cherry-pick a1b2c3d
+```
+**Output:**
+
+## 🏷️ 26. Working with Tags (git tag)
+
+> A tag marks a specific commit as important — usually to mark
+> a release version like `v1.0.0`.
+> Analogy: Like putting a bookmark with a label on a specific
+> page of your notebook so you can find that exact moment again.
+
+---
+
+### `git tag`
+**What it does:** Lists all tags in your repository.
+**Why it is used:** To see all marked release points.
+**When to use:** When checking what versions have been released.
+```bash
+git tag
+```
+**Output:**
