@@ -126,6 +126,23 @@ git merge feature/login
 ```
 **Output:**
 
+## ⚖️ 24. Merge vs Rebase vs Cherry-Pick
+
+> All three combine changes between branches — but each one
+> does it differently and is used for a different purpose.
+
+| | Merge | Rebase | Cherry-Pick |
+|---|---|---|---|
+| **What it moves** | Entire branch history | Entire branch's commits | ONE specific commit |
+| **Creates merge commit?** | ✅ Yes (if not fast-forward) | ❌ No | ❌ No |
+| **Rewrites history?** | ❌ No | ✅ Yes | ✅ Yes (new commit hash) |
+| **Best for** | Combining full branches, preserving history | Clean, linear history | Grabbing a single useful commit from another branch |
+| **Analogy** | Copying edits back into the original doc | Rewriting notes neatly on a new page | Photocopying just ONE paragraph from another document |
+
+---
+
+
+
 ## 🍒 25. Understanding "git cherry-pick"
 
 > Cherry-picking takes ONE specific commit from another branch
