@@ -244,3 +244,27 @@ git cherry-pick a1b2c3d
 git tag
 ```
 **Output:**
+
+## 🌐 27. What is GitHub?
+
+> Git and GitHub are NOT the same thing.
+> **Git** is the tool that tracks changes on YOUR computer.
+> **GitHub** is a website that stores a copy of your Git
+> repository online, so you can back it up, share it,
+> and collaborate with others.
+> Analogy: Git is like Microsoft Word (the tool you use to
+> write and track changes). GitHub is like Google Drive
+> (where you upload and share that document with the world).
+
+---
+
+### Why GitHub Matters
+| Reason | Why it helps |
+|---|---|
+| Backup | Your code is safe even if your laptop breaks |
+| Collaboration | Multiple people can work on the same project |
+| Portfolio | Employers can see your projects and skills |
+| Open Source | You can contribute to other people's projects |
+| Deployment | Many hosting tools connect directly to GitHub |
+
+---
