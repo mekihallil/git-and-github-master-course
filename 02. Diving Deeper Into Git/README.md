@@ -426,3 +426,32 @@ git push -u origin feature/dashboard
 git branch -r
 ```
 **Output:**
+
+## 🌿 36. Understanding Local Tracking Branches
+
+> A **local tracking branch** is a normal local branch that is
+> LINKED to a specific remote-tracking branch — so `git push`
+> and `git pull` know exactly where to send/receive data,
+> without you typing the remote name every time.
+> Analogy: Like saving a contact so when you hit "call,"
+> it dials the right number automatically.
+
+**What it does:** Connects your local branch to `origin/<branch>` so push/pull work with no extra arguments.
+**Why it is used:** Saves time and avoids mistakes (like pushing to the wrong branch).
+**When to use:** Anytime you create a new local branch you intend to push, or when you check out a remote branch.
+
+---
+
+## 🌱 37. Creating Local Tracking Branches
+
+---
+
+### `git switch <branch-name>` (from a remote branch)
+**What it does:** Automatically creates a local tracking branch if a matching remote branch exists.
+**Why it is used:** Git is smart enough to detect and link it for you.
+**When to use:** When you want to work on a branch a teammate already pushed.
+```bash
+git fetch origin
+git switch feature/login
+```
+**Output:**
