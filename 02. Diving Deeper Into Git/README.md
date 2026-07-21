@@ -385,3 +385,25 @@ git pull origin main
 git push
 ```
 **Output:**
+
+
+## 🌳 34. From Local to Remote — Understanding the Workflow with More Branches
+
+> Real projects rarely use just `main`. You'll usually have
+> multiple branches — each one may or may not exist on GitHub yet.
+> Analogy: Like having several photocopies (branches) at home,
+> but only some of them have been mailed to the vault (remote).
+
+---
+
+### Typical Multi-Branch Workflow
+```bash
+# 1. Create and work on a new branch locally
+git switch -c feature/dashboard
+git add .
+git commit -m "feat: add dashboard layout"
+
+# 2. Push this NEW branch to GitHub for the first time
+git push -u origin feature/dashboard
+```
+**Output:**
