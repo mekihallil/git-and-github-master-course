@@ -407,3 +407,22 @@ git commit -m "feat: add dashboard layout"
 git push -u origin feature/dashboard
 ```
 **Output:**
+
+## 🛰️ 35. Remote Tracking Branches in Practice
+
+> A **remote-tracking branch** is your local computer's private
+> "snapshot" or reference of what a branch looks like on GitHub —
+> it updates only when you fetch or pull.
+> Analogy: Like a screenshot of your friend's notebook page —
+> it doesn't update by itself; you must refresh it.
+
+---
+
+### `git branch -r`
+**What it does:** Lists all remote-tracking branches your local repo knows about.
+**Why it is used:** To see what branches exist on the remote, without switching to them.
+**When to use:** Before switching to or checking out a branch that a teammate created.
+```bash
+git branch -r
+```
+**Output:**
