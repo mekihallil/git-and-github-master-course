@@ -367,3 +367,21 @@ git pull origin main
 ---
 
 ### How to Create a Personal Access Token
+
+## 📤 33. Pushing a Second Commit
+
+> After your first push (with `-u`), Git remembers where to
+> send your commits. Every push after that is simple.
+> Analogy: Like setting up autopilot once — after that,
+> you just say "go" and it knows the destination.
+
+---
+
+### `git push`
+**What it does:** Sends your new local commits to the remote branch that's already tracked.
+**Why it is used:** Keeps your GitHub repository up to date with your latest local work.
+**When to use:** Anytime after your first commit with new changes ready to upload.
+```bash
+git push
+```
+**Output:**
