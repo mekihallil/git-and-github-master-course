@@ -377,3 +377,44 @@ git clone https://github.com/mekihallil/git-and-github-master-course.git
 ```
 **Output:**
 
+
+## 🛰️ 40. Understanding the Upstream
+
+> "Upstream" is just the remote branch your local branch is
+> LINKED to — the destination `git push` and `git pull` use
+> by default, so you don't have to type it every time.
+> Analogy: Like saving a "home address" for a branch — once
+> saved, Git always knows where to send/receive mail without
+> you re-typing the address each time.
+
+---
+
+### What "Setting Upstream" Actually Means
+**What it does:** Creates a permanent link between your local branch (e.g. `main`) and a remote branch (e.g. `origin/main`).
+**Why it is used:** Without it, Git doesn't know where `push`/`pull` should go, and will ask you to specify every time.
+**When to use:** The first time you push a new local branch to a remote.
+
+```bash
+git push -u origin main
+```
+**Output:**
+
+## 🗑️ 41. Deleting Remote Branches and Public Commits
+
+> Deleting things locally is easy to undo. Deleting things
+> that are already PUBLIC on GitHub is riskier — other people
+> may have already pulled that branch or those commits.
+> Analogy: Like sending a group text — once it's sent, you can
+> delete it from your phone, but others already saw it. On GitHub,
+> deleting a remote branch removes it for everyone next time they fetch.
+
+---
+
+### `git push origin --delete <branch-name>`
+**What it does:** Deletes a branch from the REMOTE repository (GitHub), not your local copy.
+**Why it is used:** Cleans up branches on GitHub after they've been merged and are no longer needed.
+**When to use:** After a feature branch has been merged into main and confirmed working.
+```bash
+git push origin --delete feature/login
+```
+**Output:**
