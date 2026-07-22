@@ -9,3 +9,17 @@
 ---
 
 ### GitHub Account Types — Overview
+
+
+
+## 🔒 43. Changing the Repository Type from Public to Private
+
+> Repository visibility controls WHO can see your code.
+> **Public** = anyone on the internet can view it.
+> **Private** = only you and people you explicitly invite can view it.
+> Analogy: Like switching a social media post from
+> "Public" to "Only Me" — same content, different audience.
+
+---
+
+### Steps to Change Visibility
