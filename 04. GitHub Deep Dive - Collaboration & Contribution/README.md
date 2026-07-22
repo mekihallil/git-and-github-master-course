@@ -23,3 +23,13 @@
 ---
 
 ### Steps to Change Visibility
+
+## 📢 44. Pushing Commits to a Public Repository
+
+> Public repositories are visible to EVERYONE, including your
+> full commit history, file contents, and commit messages —
+> so extra caution is needed before pushing.
+> Analogy: Like publishing a diary online — once it's posted,
+> assume anyone in the world can read every page, including old ones.
+
+---
