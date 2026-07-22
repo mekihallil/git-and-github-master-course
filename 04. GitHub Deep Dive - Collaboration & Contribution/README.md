@@ -33,3 +33,12 @@
 > assume anyone in the world can read every page, including old ones.
 
 ---
+
+## 🛡️ 45. How GitHub Manages Account Security
+
+> GitHub protects your account and code using several layers
+> of security — from login protection to code scanning.
+> Analogy: Like a bank using a password, a physical key card,
+> AND security cameras — multiple layers, not just one lock.
+
+---
