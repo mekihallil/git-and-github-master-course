@@ -98,3 +98,10 @@ git commit -m "feat: add new call-to-action button"
 git push -u origin feature/new-button
 ```
 **Output:**
+
+> Even with collaborator access, it's best practice to work
+> on **branches**, not directly on `main` — then use a Pull
+> Request so the owner (or team) can review changes before
+> they're merged.
+
+
