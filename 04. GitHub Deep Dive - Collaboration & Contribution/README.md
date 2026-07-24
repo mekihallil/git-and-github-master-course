@@ -69,3 +69,32 @@
 5) Search their GitHub username or email
 6) Click "Add <username> to this repository"
 7) GitHub sends them an invitation email
+
+
+## 👥 47. Collaborating in Private Repositories
+
+> Once someone accepts a collaborator invite, they can work
+> on the private repository almost like it's their own —
+> cloning, branching, pushing, and opening pull requests.
+> Analogy: Like being handed a key AND shown around the house —
+> now you can move freely inside, following the house rules.
+
+---
+
+### Typical Collaboration Workflow
+```bash
+# Collaborator clones the private repo (needs access first)
+git clone https://github.com/mekihallil/git-and-github-master-course.git
+cd private-project
+
+# Creates their own branch to avoid touching main directly
+git switch -c feature/new-button
+
+# Makes changes, commits
+git add .
+git commit -m "feat: add new call-to-action button"
+
+# Pushes their branch
+git push -u origin feature/new-button
+```
+**Output:**
