@@ -169,3 +169,25 @@ git push -u origin feature/new-button
 | Roles available     one (just owner)  |  Owner, Member, Outside Collaborator 
 | Teams feature             ❌ No       |      ✅ Yes |
 | Good for    | Solo projects, learning | Companies, real teams |
+
+
+```
+## 🏗️ 51. Creating an Organization
+
+**What it does:** Sets up a new shared account for a team or company on GitHub.
+**Why it is used:** Centralizes company repositories, permissions, and billing in one place.
+**When to use:** When starting a company project, or formalizing a team that was previously just collaborators.
+
+---
+
+### Steps to Create an Organization
+```
+
+1. Click your profile picture (top right) → "Your organizations"
+2. Click "New organization"
+3. Choose a plan (Free or paid)
+4. Enter an Organization name (e.g., my-startup)
+5. Enter your contact email
+6. Choose "My personal account" (this org belongs to you)
+7. Answer a few setup questions (optional)
+8. Click "Create organization"
