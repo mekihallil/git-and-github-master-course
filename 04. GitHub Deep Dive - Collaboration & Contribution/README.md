@@ -191,3 +191,30 @@ git push -u origin feature/new-button
 6. Choose "My personal account" (this org belongs to you)
 7. Answer a few setup questions (optional)
 8. Click "Create organization"
+
+
+## 🔑 52. Exploring Member Repository Permissions
+
+> Inside an organization, members don't automatically get
+> full access to every repository — permissions can be set
+> per person, per team, or per repository.
+> Analogy: Like a company building where your badge might open
+> the marketing floor, but not the finance department —
+> access is granted room by room.
+
+---
+
+### Organization Roles — Overview
+
+| Role | What they can do |
+|---|---|
+| **Owner** | Full control — manage billing, members, repos, settings |
+| **Member** | Access only to repos/teams they're explicitly given |
+| **Outside Collaborator** | Access to specific repos only, not a full org member |
+
+* Go to the Organization page
+* Click "People" (see all members)
+OR go to a specific repo → Settings → Collaborators and teams
+* Click "Add people" or adjust an existing member's role
+* Choose the permission level (Read, Triage, Write, Maintain, Admin)
+* Save changes
