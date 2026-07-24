@@ -42,3 +42,30 @@
 > AND security cameras — multiple layers, not just one lock.
 
 ---
+
+## 🤝 46. Understanding & Adding a Collaborator to a Private User Account
+
+> A collaborator is someone you personally invite to work on
+> YOUR repository — useful when you don't need a full
+> organization, just an extra pair of hands.
+> Analogy: Like giving a trusted friend a spare key to your
+> apartment — they can come in and help, but it's still your place.
+
+---
+
+### Why Add a Collaborator
+**What it does:** Grants another GitHub user push/pull access to your private (or public) repository.
+**Why it is used:** So more than one person can contribute code, without making the repo public.
+**When to use:** Working with a friend, freelancer, or teammate on a personal project/repo.
+
+---
+
+### Steps to Add a Collaborator
+
+1) Go to your repository on GitHub
+2) Click "Settings"
+3) Click "Collaborators" in the left sidebar
+4) Click "Add people"
+5) Search their GitHub username or email
+6) Click "Add <username> to this repository"
+7) GitHub sends them an invitation email
