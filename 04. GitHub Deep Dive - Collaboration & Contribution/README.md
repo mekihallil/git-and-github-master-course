@@ -114,3 +114,26 @@ git push -u origin feature/new-button
 > the guest can use the house, but can't sell it or change the locks.
 
 ---
+
+
+## 🚫 49. Limiting Interactions
+
+> "Limit interactions" is a GitHub feature that temporarily
+> restricts who can comment, open issues, or create pull
+> requests on your repository — useful during spam or abuse.
+> Analogy: Like temporarily muting comments on a social media
+> post that's getting spammed, without deleting the post itself.
+
+---
+
+### Steps to Limit Interactions
+1) Go to your repository
+2) Click "Settings"
+3) Scroll to "Moderation options" → "Interaction limits"
+4) Click "Limit interactions"
+5) Choose a limit level:
+    Existing users
+    Contributors only
+    Collaborators only
+6) Choose duration: 24 hours, 3 days, 7 days, 30 days, or 6 months
+7) Click "Limit interactions"
