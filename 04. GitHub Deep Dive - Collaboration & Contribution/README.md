@@ -137,3 +137,35 @@ git push -u origin feature/new-button
     Collaborators only
 6) Choose duration: 24 hours, 3 days, 7 days, 30 days, or 6 months
 7) Click "Limit interactions"
+
+
+
+## 🏢 50. Introducing Organizations
+
+> A GitHub **Organization** is a shared account for a team or
+> company — repositories belong to the organization, not to
+> one individual person.
+> Analogy: Like the difference between YOUR personal filing
+> cabinet vs. the company's shared filing cabinet — everyone
+> on the team can access what belongs to the company.
+
+---
+
+### Why Use an Organization Instead of a Personal Account
+| Reason | Why it matters |
+|---|---|
+| Shared ownership | Repos don't disappear if one person leaves |
+| Role-based permissions | Owner, Member, Outside Collaborator — more control than personal repos |
+| Teams | Group people (e.g. "Frontend Team") and assign repo access by team |
+| Billing | Centralized billing for the whole company, not individuals |
+| Professional presence | `github.com/your-company` looks more credible for businesses |
+
+---
+
+### Organization vs Personal Account — Quick Comparison
+
+| |                   Personal Account  |    Organization 
+| Repos owned by            You         |  The organization 
+| Roles available     one (just owner)  |  Owner, Member, Outside Collaborator 
+| Teams feature             ❌ No       |      ✅ Yes |
+| Good for    | Solo projects, learning | Companies, real teams |
