@@ -105,3 +105,12 @@ git push -u origin feature/new-button
 > they're merged.
 
 
+## ⚖️ 48. Comparing Owner & Collaborator Rights
+
+> Not everyone with access has the SAME power. The repository
+> **Owner** always has full control; a **Collaborator** has
+> limited permissions, decided by the owner.
+> Analogy: Like a house owner vs. a guest with a key —
+> the guest can use the house, but can't sell it or change the locks.
+
+---
